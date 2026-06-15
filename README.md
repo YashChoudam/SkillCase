@@ -268,31 +268,6 @@ Open:
 http://localhost:5173
 ```
 
-## Git Ignore Notes
 
-The repository should not include:
 
-```txt
-Backend/.env
-Backend/node_modules/
-Backend/dist/
-Backend/src/uploads/
-Frontend/skillcase-project/.env
-Frontend/skillcase-project/node_modules/
-Frontend/skillcase-project/dist/
-```
 
-Video files must stay local and must not be pushed to GitHub.
-
-## Submission Checklist
-
-- Backend builds successfully.
-- Frontend builds successfully.
-- Supabase schema is created.
-- Auth APIs work.
-- Video APIs work.
-- Like, comment, and bookmark APIs work.
-- Videos are served from Express static middleware.
-- `.env` files are not committed.
-- Video files are not committed.
-- README contains setup and architecture instructions.
