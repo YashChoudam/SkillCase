@@ -8,7 +8,8 @@ import cors from "cors" ;
 import {corsOptions} from "./config/cors.config.js" ;
 import { envConfig } from "./config/env.config.js";
 
-
+// Import of routes
+import {authRouter} from "./routes/auth.routes.js" ;
 
 const app = express() ;
 
@@ -21,8 +22,8 @@ app.use(cors(corsOptions));
 
 
 // Routes
-
-
+app.use("/auth", authRouter) ;
+app.use("/uploads", express.static("src/uploads"));
 
 
 export default app ;
